@@ -51,6 +51,8 @@
             main {
                 background: rgb(245, 238, 219);
                 display: flex;
+                border: 3px solid;
+                border-radius: 25px;
             }
             [class=sidebar] {
                 margin-right: 25px;
@@ -67,6 +69,14 @@
                 font-size: 1em;
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+            <script>
+                 $(document).ready(function(){
+                    $('button').click(function(){
+                       $("ul.professional-interest").fadeOut();
+                    });
+                });
+            </script>
     </head>
     <body>
         <div id="all-contents">
@@ -99,6 +109,19 @@
                         <li>I make a lot of puns at any oppurtunity I have.</li>
                     </ul>
                 </section>
+            </main>
+            <main>
+                <div class='content'>
+                    <header>Professional Interest</header>
+                    <section class='interest'>
+                        <button>Use to see my further Interest</button>
+                        <ul class='professional-interest'>
+                            <li>Forensic Anthropology</li>
+                            <li>Writing Novels</li>
+                            <li>getting a life</li>
+                        </ul>
+                    </section>
+                </div>
             </main>
         </div>
     </body>
